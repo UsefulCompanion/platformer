@@ -21,10 +21,10 @@ public class MovingPlatform : MonoBehaviour
         float amtToMove = speed * Time.deltaTime;
         int nextPos = (currentPos + 1) % path.Length; //1,2,3,0,1
         Vector3 direction = (path[nextPos].position - path[currentPos].position).normalized;
-        
-        transform.Translate(direction*amtToMove, Space.World);
 
-        if (Vector3.Distance(transform.position, path[nextPos].position) < 0.5f) 
+        transform.Translate(direction * amtToMove, Space.World);
+
+        if (Vector3.Distance(transform.position, path[nextPos].position) < 0.5f)
         {
             currentPos = nextPos;
         }

@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8bc196c0445213d46be04ab388901a1f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -113,7 +113,7 @@ MonoBehaviour:
   moveSettings:
     runVelocity: 12
     jumpVelocity: 25
-    rotateVelocity: 100
+    rotateVelocity: 200
     distanceToGround: 1.1
     ground:
       serializedVersion: 2
