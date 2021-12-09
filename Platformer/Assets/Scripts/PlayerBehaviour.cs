@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.VFX;
 
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerBehaviour : MonoBehaviour
@@ -40,6 +41,8 @@ public class PlayerBehaviour : MonoBehaviour
     private Quaternion targetRot;
     private float forwardInput, sidewaysInput, turnInput, jumpInput;
 
+    [SerializeField] private Transform spawnPoint;
+
     private void Awake()
     {
         velocity = Vector3.zero;
@@ -47,6 +50,11 @@ public class PlayerBehaviour : MonoBehaviour
         targetRot = transform.rotation;
 
         playerRigidbody = GetComponent<Rigidbody>();
+    }
+
+    private void Start()
+    {
+        Spawn();
     }
 
     //called every frame
@@ -119,5 +127,18 @@ public class PlayerBehaviour : MonoBehaviour
         }
 
         transform.rotation = targetRot;
+    }
+
+    private void Spawn()
+    {
+        transform.position = spawnPoint.position;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.transform.CompareTag("DeathZone"))
+        {
+            Spawn();
+        }
     }
 }

@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 707dcd941e5571e40a56b20f54febc22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceAway: 12
-  distanceUp: 5
+  distanceAway: 15
+  distanceUp: 6
   smooth: 1000
   follow: {fileID: 0}
