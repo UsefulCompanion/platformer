@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 1149766458358404016}
   - component: {fileID: 1149766458358404019}
   - component: {fileID: 1149766458358404018}
-  - component: {fileID: 1149766458358404021}
   - component: {fileID: 1149766458358404020}
+  - component: {fileID: 6296722785329079711}
+  - component: {fileID: 588171248741580782}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -98,33 +99,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1149766458358404021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1149766458358404023}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aec4347fd34568b4a890464d2edc03c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSettings:
-    runVelocity: 12
-    jumpVelocity: 25
-    rotateVelocity: 200
-    distanceToGround: 1.1
-    ground:
-      serializedVersion: 2
-      m_Bits: 4294967295
-  inputSettings:
-    FORWARD_AXIS: Vertical
-    SIDEWAYS_AXIS: Horizontal
-    TURN_AXIS: Mouse X
-    JUMP_AXIS: Jump
-  physSettings:
-    downAccel: 1
 --- !u!54 &1149766458358404020
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -141,3 +115,59 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6296722785329079711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149766458358404023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aec4347fd34568b4a890464d2edc03c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSettings:
+    runVelocity: 12
+    rotateVelocity: 100
+    jumpVelocity: 25
+    distanceToGround: 1.1
+    ground:
+      serializedVersion: 2
+      m_Bits: 0
+  inputSettings:
+    FORWARD_AXIS: Vertical
+    SIDEWAYS_AXIS: Horizontal
+    TURN_AXIS: Mouse X
+    JUMP_AXIS: Jump
+  physSettings:
+    downAccel: 1
+  spawnPoint: {fileID: 0}
+--- !u!114 &588171248741580782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149766458358404023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aec4347fd34568b4a890464d2edc03c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSettings:
+    runVelocity: 12
+    rotateVelocity: 100
+    jumpVelocity: 25
+    distanceToGround: 1.1
+    ground:
+      serializedVersion: 2
+      m_Bits: 4294967295
+  inputSettings:
+    FORWARD_AXIS: Vertical
+    SIDEWAYS_AXIS: Horizontal
+    TURN_AXIS: Mouse X
+    JUMP_AXIS: Jump
+  physSettings:
+    downAccel: 1
+  spawnPoint: {fileID: 0}

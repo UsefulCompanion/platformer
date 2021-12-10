@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 4242630774929388610}
   - component: {fileID: 478999713025065751}
   - component: {fileID: 3642859426327462249}
-  - component: {fileID: 3711300574419555779}
+  - component: {fileID: 7464161232245693895}
   m_Layer: 0
   m_Name: Moving_Platform
-  m_TagString: Ground
+  m_TagString: MovingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,7 +96,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3711300574419555779
+--- !u!114 &7464161232245693895
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -108,6 +108,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dec256c98f7441049afb3dec73af687e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 2
   path:
   - {fileID: 6504908132004839112}

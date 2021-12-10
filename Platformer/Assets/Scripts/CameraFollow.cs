@@ -9,7 +9,7 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] private float smooth;
     [SerializeField] private Transform follow;
     private Vector3 targetPos;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -23,8 +23,7 @@ public class CameraFollow : MonoBehaviour
     {
         targetPos = follow.position + Vector3.up * distanceUp - follow.forward * distanceAway;
         transform.position = Vector3.Lerp(transform.position, targetPos, Time.deltaTime * smooth);
-
+        
         transform.LookAt(follow);
     }
-
 }

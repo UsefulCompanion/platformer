@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.VFX;
 
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerBehaviour : MonoBehaviour
@@ -10,9 +9,9 @@ public class PlayerBehaviour : MonoBehaviour
     [System.Serializable]
     public class MoveSettings
     {
-        public float runVelocity = 12f;
-        public float jumpVelocity = 25f;
-        public float rotateVelocity = 100f;
+        public float runVelocity = 12;
+        public float rotateVelocity = 100;
+        public float jumpVelocity = 25;
         public float distanceToGround = 1.1f;
         public LayerMask ground;
     }
@@ -48,7 +47,6 @@ public class PlayerBehaviour : MonoBehaviour
         velocity = Vector3.zero;
         forwardInput = sidewaysInput = turnInput = jumpInput = 0;
         targetRot = transform.rotation;
-
         playerRigidbody = GetComponent<Rigidbody>();
     }
 
@@ -57,14 +55,12 @@ public class PlayerBehaviour : MonoBehaviour
         Spawn();
     }
 
-    //called every frame
     private void Update()
     {
         GetInput();
         Turn();
     }
 
-    //called every 0.2s
     private void FixedUpdate()
     {
         Run();
@@ -103,7 +99,7 @@ public class PlayerBehaviour : MonoBehaviour
         velocity.z = forwardInput * moveSettings.runVelocity;
         velocity.x = sidewaysInput * moveSettings.runVelocity;
     }
-
+    
     void Jump()
     {
         if (jumpInput != 0 && Grounded())
@@ -118,7 +114,7 @@ public class PlayerBehaviour : MonoBehaviour
             velocity.y -= physSettings.downAccel;
         }
     }
-
+    
     void Turn()
     {
         if (Math.Abs(turnInput) > 0)
@@ -129,7 +125,7 @@ public class PlayerBehaviour : MonoBehaviour
         transform.rotation = targetRot;
     }
 
-    private void Spawn()
+    void Spawn()
     {
         transform.position = spawnPoint.position;
     }
