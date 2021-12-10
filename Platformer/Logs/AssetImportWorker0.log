@@ -1477,3 +1477,36 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 587.888136 seconds.
+  path: Assets/Gizmos
+  artifactKey: Guid(713fcfc966fa42249b19ec06c619ac7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gizmos using Guid(713fcfc966fa42249b19ec06c619ac7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd4ec7218aa038f6e58b2ca96e62e331') in 0.006747 seconds 
+  Import took 0.009503 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 62.973542 seconds.
+  path: Assets/Gizmos/spawnpoint.jpg
+  artifactKey: Guid(086c4b861dce9c94d8469d5f38be16d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Gizmos/spawnpoint.jpg using Guid(086c4b861dce9c94d8469d5f38be16d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e689ba718629d3cd5e77d4eff177cf4') in 0.034169 seconds 
+  Import took 0.036406 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.034156 seconds.
+  path: Assets/Scripts/MenuItem.cs
+  artifactKey: Guid(a8c5b9f4e6e0cd24883745d367b746b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MenuItem.cs using Guid(a8c5b9f4e6e0cd24883745d367b746b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6e95f4b9fa253e8c8fe799a9ef5cb50') in 0.003310 seconds 
+  Import took 0.005274 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 137.073676 seconds.
+  path: Assets/Prefabs/SpawnPoint.prefab
+  artifactKey: Guid(c96c4068f9b1de049b09f18f30f32ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/SpawnPoint.prefab using Guid(c96c4068f9b1de049b09f18f30f32ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7f6dbd23a3696b0712d1e22f9afb11a') in 0.008786 seconds 
+  Import took 0.010989 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
